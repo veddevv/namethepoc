@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAME - Windows 3.1 Experience</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to NAME</h1>
+        <p>Windows 3.1 Experience in your browser.</p>
+    </header>
+    <main>
+        <div id="game-container">
+            <!-- Desktop -->
+            <div id="desktop">
+                <!-- Program Manager Window -->
+                <div class="window" id="program-manager">
+                    <div class="window-titlebar">
+                        <span class="window-title">Program Manager</span>
+                        <div class="window-controls">
+                            <button class="window-minimize">_</button>
+                            <button class="window-maximize">□</button>
+                            <button class="window-close">×</button>
+                        </div>
+                    </div>
+                    <div class="window-menubar">
+                        <span class="menu-item">File</span>
+                        <span class="menu-item">Options</span>
+                        <span class="menu-item">Window</span>
+                        <span class="menu-item">Help</span>
+                    </div>
+                    <div class="window-content">
+                        <div class="program-group" data-group="accessories">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjQzBDMEMwIi8+CjxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iIzgwODA4MCIvPgo8L3N2Zz4K" alt="Accessories">
+                            <span>Accessories</span>
+                        </div>
+                        <div class="program-group" data-group="games">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjRkZGRkZGIi8+CjxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iI0ZGMDAwMCIvPgo8L3N2Zz4K" alt="Games">
+                            <span>Games</span>
+                        </div>
+                        <div class="program-group" data-group="main">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMDA4MDAwIi8+CjxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iIzAwRkYwMCIvPgo8L3N2Zz4K" alt="Main">
+                            <span>Main</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Icons -->
+                <div class="desktop-icon" data-app="notepad" style="top: 20px; left: 20px;">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMwMDAwMDAiLz4KPGxpbmUgeDE9IjQiIHkxPSI4IiB4Mj0iMjgiIHkyPSI4IiBzdHJva2U9IiMwMDAwMDAiLz4KPGxpbmUgeDE9IjQiIHkxPSIxMiIgeDI9IjI4IiB5Mj0iMTIiIHN0cm9rZT0iIzAwMDAwMCIvPgo8bGluZSB4MT0iNCIgeTE9IjE2IiB4Mj0iMjgiIHkyPSIxNiIgc3Ryb2tlPSIjMDAwMDAwIi8+CjwvdGdmPgo=" alt="Notepad">
+                    <span>Notepad</span>
+                </div>
+
+                <div class="desktop-icon" data-app="calculator" style="top: 100px; left: 20px;">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAwMDAiLz4KPHJlY3QgeD0iNCIgeT0iNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjYiIGZpbGw9IiMwMDAwMDAiLz4KPHJlY3QgeD0iNCIgeT0iMTIiIHdpZHRoPSI2IiBoZWlnaHQ9IjQiIGZpbGw9IiM4MDgwODAiLz4KPC9zdmc+Cg==" alt="Calculator">
+                    <span>Calculator</span>
+                </div>
+
+                <div class="desktop-icon" data-app="minesweeper" style="top: 180px; left: 20px;">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjQzBDMEMwIi8+CjxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjgiIGZpbGw9IiMwMDAwMDAiLz4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iNCIgZmlsbD0iI0ZGRkZGRiIvPgo8L3N2Zz4K" alt="Minesweeper">
+                    <span>Minesweeper</span>
+                </div>
+            </div>
+
+            <!-- Taskbar -->
+            <div id="taskbar">
+                <div id="start-button">Start</div>
+                <div id="taskbar-programs"></div>
+                <div id="system-clock">12:00 PM</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 NAME. All rights reserved.</p>
+    </footer>
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

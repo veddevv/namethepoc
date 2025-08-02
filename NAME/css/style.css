@@ -1,0 +1,338 @@
+/* Windows 3.1 Style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 11px;
+    background-color: #c0c0c0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+header {
+    background: #008080;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 12px;
+    border-bottom: 1px solid #000080;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+}
+
+header p {
+    margin: 2px 0 0 0;
+    font-size: 10px;
+}
+
+#game-container {
+    position: relative;
+    height: calc(100vh - 60px);
+    background-color: #008080;
+    background-image: 
+        repeating-linear-gradient(45deg, #008080 0px, #008080 2px, #006060 2px, #006060 4px);
+}
+
+/* Desktop */
+#desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    background-color: #008080;
+    background-image: 
+        repeating-linear-gradient(45deg, #008080 0px, #008080 2px, #006060 2px, #006060 4px);
+}
+
+/* Windows 3.1 Window Style */
+.window {
+    position: absolute;
+    background-color: #c0c0c0;
+    border: 2px outset #c0c0c0;
+    min-width: 200px;
+    min-height: 150px;
+    box-shadow: 2px 2px 0px #808080;
+}
+
+.window-titlebar {
+    background: linear-gradient(90deg, #000080 0%, #0000ff 100%);
+    color: white;
+    padding: 2px 4px;
+    font-weight: bold;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+}
+
+.window-title {
+    flex-grow: 1;
+}
+
+.window-controls {
+    display: flex;
+    gap: 2px;
+}
+
+.window-controls button {
+    background: #c0c0c0;
+    border: 1px outset #c0c0c0;
+    width: 16px;
+    height: 14px;
+    font-size: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-controls button:active {
+    border: 1px inset #c0c0c0;
+}
+
+.window-menubar {
+    background: #c0c0c0;
+    border-bottom: 1px solid #808080;
+    padding: 2px 4px;
+    font-size: 11px;
+}
+
+.menu-item {
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background: #0000ff;
+    color: white;
+}
+
+.window-content {
+    padding: 8px;
+    background: #c0c0c0;
+    height: calc(100% - 40px);
+    overflow: auto;
+}
+
+/* Program Manager */
+#program-manager {
+    top: 50px;
+    left: 100px;
+    width: 300px;
+    height: 200px;
+}
+
+.program-group {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.program-group:hover {
+    background: #0000ff;
+    color: white;
+}
+
+.program-group img {
+    display: block;
+    margin: 0 auto 4px auto;
+}
+
+.program-group span {
+    display: block;
+    font-size: 10px;
+}
+
+/* Desktop Icons */
+.desktop-icon {
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+    padding: 4px;
+    color: white;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.desktop-icon:hover {
+    background: rgba(0, 0, 255, 0.3);
+}
+
+.desktop-icon img {
+    display: block;
+    margin: 0 auto 4px auto;
+}
+
+.desktop-icon span {
+    display: block;
+    font-size: 10px;
+    word-wrap: break-word;
+}
+
+/* Taskbar */
+#taskbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 28px;
+    background: #c0c0c0;
+    border-top: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+}
+
+#start-button {
+    background: #c0c0c0;
+    border: 2px outset #c0c0c0;
+    padding: 2px 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+#start-button:active {
+    border: 2px inset #c0c0c0;
+}
+
+#taskbar-programs {
+    flex-grow: 1;
+    display: flex;
+    gap: 2px;
+}
+
+.taskbar-item {
+    background: #c0c0c0;
+    border: 1px outset #c0c0c0;
+    padding: 2px 8px;
+    font-size: 10px;
+    cursor: pointer;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.taskbar-item.active {
+    border: 1px inset #c0c0c0;
+    background: #808080;
+}
+
+#system-clock {
+    border: 1px inset #c0c0c0;
+    padding: 2px 6px;
+    font-size: 10px;
+    background: #c0c0c0;
+}
+
+/* App Windows */
+.app-window {
+    display: none;
+}
+
+.app-window.active {
+    display: block;
+}
+
+/* Notepad Specific */
+.notepad-content {
+    width: 100%;
+    height: 100%;
+    border: 1px inset #c0c0c0;
+    padding: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    background: white;
+    resize: none;
+    outline: none;
+}
+
+/* Calculator Specific */
+.calculator-content {
+    background: #c0c0c0;
+    padding: 8px;
+}
+
+.calculator-display {
+    width: 100%;
+    height: 30px;
+    border: 1px inset #c0c0c0;
+    background: white;
+    text-align: right;
+    padding: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.calc-button {
+    background: #c0c0c0;
+    border: 1px outset #c0c0c0;
+    padding: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.calc-button:active {
+    border: 1px inset #c0c0c0;
+}
+
+/* Minesweeper Specific */
+.minesweeper-content {
+    background: #c0c0c0;
+    padding: 8px;
+}
+
+.mine-field {
+    display: grid;
+    grid-template-columns: repeat(8, 20px);
+    gap: 1px;
+    margin: 8px auto;
+    width: fit-content;
+}
+
+.mine-cell {
+    width: 20px;
+    height: 20px;
+    background: #c0c0c0;
+    border: 1px outset #c0c0c0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mine-cell:active {
+    border: 1px inset #c0c0c0;
+}
+
+.mine-cell.revealed {
+    background: #808080;
+    border: 1px solid #808080;
+}
+
+.mine-cell.mine {
+    background: #ff0000;
+}
+
+.mine-cell.flagged {
+    background: #ffff00;
+}
